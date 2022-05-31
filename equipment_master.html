@@ -1,0 +1,57 @@
+{% extends "www/base_template.html" %}
+
+{% block activeEquipment %}active{% endblock activeEquipment %}
+
+{% block title %}Equipment Master{% endblock title %}
+
+{% block user %}{{username}}{% endblock user %}
+
+{% block content %}
+
+<div class="dashboard-wrapper">
+    <div class="dashboard-influence">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-block">
+                        <h3 class="section-title">Equipments</h3>
+                    </div>
+                    <div class="card">
+                        <div class="campaign-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr class="border-0">
+                                        <th class="border-0">Equipment Name</th>
+                                        <th class="border-0">Equipment Type</th>
+                                        <th class="border-0">Equipment Code</th>
+                                        <th class="border-0">Maximum Capacity</th>
+                                        <th class="border-0">Minimum Capacity</th>
+                                        <th class="border-0">Model No.</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for equipment in equipments %}
+                                        {% if equipment.operator==username %}
+                                            <tr>
+                                                <td>{{equipment.equipment_name}}</td>
+                                                <td>{{equipment.equipment_type}}</td>
+                                                <td>{{equipment.equipment_code}}</td>
+                                                <td>{{equipment.maximum_capacity}}</td>
+                                                <td>{{equipment.minimum_capacity}}</td>
+                                                <td>{{equipment.model_no}}</td>
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

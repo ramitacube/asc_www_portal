@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
     <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
     <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
-    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+    <title>{% block title %}{% endblock title %} | Operator Portal</title>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
 	                            <input class="form-control" type="text" placeholder="Search..">
 	                        </div>
 	                    </li>
-	                    <li class="nav-item dropdown notification">
+	                    <!-- <li class="nav-item dropdown notification">
 	                        <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span class="indicator"></span></a>
 	                        <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
 	                            <li>
@@ -83,8 +83,8 @@
 	                                <div class="list-footer"> <a href="#">View all notifications</a></div>
 	                            </li>
 	                        </ul>
-	                    </li>
-	                    <li class="nav-item dropdown connection">
+	                    </li> -->
+	                    <!-- <li class="nav-item dropdown connection">
 	                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
 	                        <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
 	                            <li class="connection-list">
@@ -115,13 +115,12 @@
 	                                <div class="conntection-footer"><a href="#">More</a></div>
 	                            </li>
 	                        </ul>
-	                    </li>
+	                    </li> -->
 	                    <li class="nav-item dropdown nav-user">
 	                        <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
 	                        <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
 	                            <div class="nav-user-info">
-	                                <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
-	                                <span class="status"></span><span class="ml-2">Available</span>
+	                                <h5 class="mb-0 text-white nav-user-name">{% block user %}{% endblock user %}</h5>
 	                            </div>
 	                            <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
 	                            <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
@@ -142,22 +141,20 @@
 	        <div class="menu-list">
 	            <nav class="navbar navbar-expand-lg navbar-light">
 	                <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
-	                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	                    <span class="navbar-toggler-icon"></span>
-	                </button>
+	                </button> -->
 					
 	                <div class="collapse navbar-collapse" id="navbarNav">
 	                    <ul class="navbar-nav flex-column">
-	                        <li class="nav-divider">
-	                            Menu
-	                        </li>
-	                        <li class="nav-item ">
-	                            <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1" aria-controls="submenu-1"><i class="fa fa-fw fa-user-circle"></i>Dashboard <span class="badge badge-success">6</span></a>
-	                            <div id="submenu-1" class="collapse submenu" style="">
+	                        
+	                         <li class="nav-item ">
+	                            <a class="nav-link {% block activeDashboard %}{% endblock activeDashboard %}" href="http://sports.asc:8014/dashboard"><i class="fa fa-fw fa-user-circle"></i>Dashboard </span></a>
+	                           <!-- <div id="submenu-1" class="collapse submenu" >
 	                                <ul class="nav flex-column">
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-2" aria-controls="submenu-1-2">E-Commerce</a>
-	                                        <div id="submenu-1-2" class="collapse submenu" style="">
+	                                        <div id="submenu-1-2" class="collapse submenu" >
 	                                            <ul class="nav flex-column">
 	                                                <li class="nav-item">
 	                                                    <a class="nav-link" href="index.html">E Commerce Dashboard</a>
@@ -182,7 +179,7 @@
 	                                    </li>
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-1-1" aria-controls="submenu-1-1">Infulencer</a>
-	                                        <div id="submenu-1-1" class="collapse submenu" style="">
+	                                        <div id="submenu-1-1" class="collapse submenu" >
 	                                            <ul class="nav flex-column">
 	                                                <li class="nav-item">
 	                                                    <a class="nav-link" href="dashboard-influencer.html">Influencer</a>
@@ -197,11 +194,11 @@
 	                                        </div>
 	                                    </li>
 	                                </ul>
-	                            </div>
-	                        </li>
+	                            </div> -->
+	                        </li> 
 	                        <li class="nav-item">
-	                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>UI Elements</a>
-	                            <div id="submenu-2" class="collapse submenu" style="">
+	                            <a class="nav-link {% block activePlanMaster %}{% endblock activePlanMaster %}" href="http://sports.asc:8014/policy_master"><i class="fa fa-fw fa-rocket"></i>Plan Master</a>
+	                            <!-- <div id="submenu-2" class="collapse submenu">
 	                                <ul class="nav flex-column">
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="pages/cards.html">Cards <span class="badge badge-secondary">New</span></a>
@@ -225,11 +222,11 @@
 	                                        <a class="nav-link" href="pages/tabs.html">Tabs</a>
 	                                    </li>
 	                                </ul>
-	                            </div>
+	                            </div> -->
 	                        </li>
 	                        <li class="nav-item">
-	                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3"><i class="fas fa-fw fa-chart-pie"></i>Chart</a>
-	                            <div id="submenu-3" class="collapse submenu" style="">
+	                            <a class="nav-link {% block activeIssuePolicy %}{% endblock activeIssuePolicy %}" href="http://sports.asc:8014/issue_policy"><i class="fas fa-fw fa-chart-pie"></i>Issue Policy</a>
+	                            <!-- <div id="submenu-3" class="collapse submenu" >
 	                                <ul class="nav flex-column">
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="pages/chart-c3.html">C3 Charts</a>
@@ -250,11 +247,11 @@
 	                                        <a class="nav-link" href="pages/chart-gauge.html">Guage</a>
 	                                    </li>
 	                                </ul>
-	                            </div>
+	                            </div> -->
 	                        </li>
 	                        <li class="nav-item ">
-	                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>Forms</a>
-	                            <div id="submenu-4" class="collapse submenu" style="">
+	                            <a class="nav-link {% block activeCommissionReport %}{% endblock activeCommissionReport %}" href="http://sports.asc:8014/commission_report"><i class="fab fa-fw fa-wpforms"></i>Commission Report</a>
+	                            <!-- <div id="submenu-4" class="collapse submenu" >
 	                                <ul class="nav flex-column">
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="pages/form-elements.html">Form Elements</a>
@@ -272,27 +269,40 @@
 	                                        <a class="nav-link" href="pages/bootstrap-select.html">Bootstrap Select</a>
 	                                    </li>
 	                                </ul>
-	                            </div>
+	                            </div> -->
 	                        </li>
-	                        <li class="nav-item">
-	                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-fw fa-table"></i>Tables</a>
-	                            <div id="submenu-5" class="collapse submenu" style="">
-	                                <ul class="nav flex-column">
-	                                    <li class="nav-item">
-	                                        <a class="nav-link" href="pages/general-table.html">General Tables</a>
-	                                    </li>
-	                                    <li class="nav-item">
-	                                        <a class="nav-link" href="pages/data-tables.html">Data Tables</a>
-	                                    </li>
-	                                </ul>
-	                            </div>
+	                        <li class="nav-item ">
+	                            <a class="nav-link {% block activeSalesSummary %}{% endblock activeSalesSummary %}" href="http://sports.asc:8014/sales_summary"><i class="fab fa-fw fa-wpforms"></i>Sales Summary</a>
 	                        </li>
-	                        <li class="nav-divider">
+	                        <li class="nav-item ">
+	                            <a class="nav-link {% block activePayment %}{% endblock activePayment %}" href="http://sports.asc:8014/payments"><i class="fab fa-fw fa-wpforms"></i>Payments</a>
+	                        </li>
+	                        <li class="nav-item ">
+	                            <a class="nav-link {% block activeInvoice %}{% endblock activeInvoice %}" href="http://sports.asc:8014/invoices_list"><i class="fab fa-fw fa-wpforms"></i>Invoices</a>
+	                        </li>
+	                        <li class="nav-item ">
+	                            <a class="nav-link {% block activeAllTrancation %}{% endblock activeAllTrancation %}" href="http://sports.asc:8014/all_trancations"><i class="fab fa-fw fa-wpforms"></i>All Tranctions</a>
+	                        </li>
+	                        <li class="nav-item ">
+	                            <a class="nav-link {% block activeActivity %}{% endblock activeActivity %}" href="http://sports.asc:8014/activity_master"><i class="fab fa-fw fa-wpforms"></i>Activity Master</a>
+	                        </li>
+	                        <li class="nav-item ">
+	                            <a class="nav-link {% block activeEquipment %}{% endblock activeEquipment %}" href="http://sports.asc:8014/equipment_master"><i class="fab fa-fw fa-wpforms"></i>Equipment Master</a>
+	                        </li>
+	                        <li class="nav-item ">
+	                            <a class="nav-link {% block activeTicketMaster %}{% endblock activeTicketMaster %}" href="http://sports.asc:8014/ticket_master"><i class="fab fa-fw fa-wpforms"></i>Ticket Master</a>
+	                        </li>
+	                        <li class="nav-item ">
+	                            <a class="nav-link" href="http://sports.asc:8014/?cmd=web_logout"><i class="fab fa-fw fa-wpforms"></i>Logout</a>
+	                        </li>
+	                        
+	                        
+	                        <!-- <li class="nav-divider">
 	                            Features
 	                        </li>
 	                        <li class="nav-item">
 	                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-file"></i> Pages </a>
-	                            <div id="submenu-6" class="collapse submenu" style="">
+	                            <div id="submenu-6" class="collapse submenu">
 	                                <ul class="nav flex-column">
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="pages/blank-page.html">Blank Page</a>
@@ -341,7 +351,7 @@
 	                        </li>
 	                        <li class="nav-item">
 	                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-7" aria-controls="submenu-7"><i class="fas fa-fw fa-inbox"></i>Apps <span class="badge badge-secondary">New</span></a>
-	                            <div id="submenu-7" class="collapse submenu" style="">
+	                            <div id="submenu-7" class="collapse submenu" >
 	                                <ul class="nav flex-column">
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="pages/inbox.html">Inbox</a>
@@ -360,7 +370,7 @@
 	                        </li>
 	                        <li class="nav-item">
 	                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-8" aria-controls="submenu-8"><i class="fas fa-fw fa-columns"></i>Icons</a>
-	                            <div id="submenu-8" class="collapse submenu" style="">
+	                            <div id="submenu-8" class="collapse submenu" >
 	                                <ul class="nav flex-column">
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="pages/icon-fontawesome.html">FontAwesome Icons</a>
@@ -385,7 +395,7 @@
 	                        </li>
 	                        <li class="nav-item">
 	                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-9" aria-controls="submenu-9"><i class="fas fa-fw fa-map-marker-alt"></i>Maps</a>
-	                            <div id="submenu-9" class="collapse submenu" style="">
+	                            <div id="submenu-9" class="collapse submenu">
 	                                <ul class="nav flex-column">
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="pages/map-google.html">Google Maps</a>
@@ -398,7 +408,7 @@
 	                        </li>
 	                        <li class="nav-item">
 	                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-10" aria-controls="submenu-10"><i class="fas fa-f fa-folder"></i>Menu Level</a>
-	                            <div id="submenu-10" class="collapse submenu" style="">
+	                            <div id="submenu-10" class="collapse submenu">
 	                                <ul class="nav flex-column">
 	                                    <li class="nav-item">
 	                                        <a class="nav-link" href="#">Level 1</a>
@@ -421,7 +431,7 @@
 	                                    </li>
 	                                </ul>
 	                            </div>
-	                        </li>
+	                        </li> -->
 	                    </ul>
 	                </div>
 	            </nav>
@@ -434,7 +444,7 @@
 	    <!-- wrapper  -->
 	    <!-- ============================================================== -->
 	   {% block content %}
-	   {% endblock %}
+	   {% endblock content %}
 	                        <!-- ============================================================== -->
 	                        <!-- end wrapper  -->
 	                        <!-- ============================================================== -->
@@ -458,7 +468,6 @@
 						</div>
 						<!-- ============================================================== -->
 						<!-- end footer -->
-	                    </div>
 	                    <!-- ============================================================== -->
 	                    <!-- end main wrapper  -->
 	                    <!-- ============================================================== -->

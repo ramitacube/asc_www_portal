@@ -1,0 +1,62 @@
+{% extends "www/base_template.html" %}
+
+{% block activeIssuePolicy %}active{% endblock activeIssuePolicy %}
+
+{% block title %}Issue Policy{% endblock title %}
+
+{% block user %}{{username}}{% endblock user %}
+
+{% block content %}
+
+<div class="dashboard-wrapper">
+    <div class="dashboard-influence">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-block">
+                        <h3 class="section-title">Issue Policy</h3>
+                    </div>
+                    <div class="card">
+                        <div class="campaign-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr class="border-0">
+                                        <th class="border-0">Policy Number</th>
+                                        <th class="border-0">Customer</th>
+                                        <th class="border-0">Customer Contact</th>
+                                        <th class="border-0">DOB</th>
+                                        <th class="border-0">Policy</th>
+                                        <th class="border-0">Start Date</th>
+                                        <th class="border-0">Period Of Issuance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for policy in policy_issue %}
+											{% if policy.operator==username %}
+												<tr>
+													<td>{{policy.name}}</td>
+													<td>{{policy.customer}}</td>
+													<td>{{policy.name}}</td>
+													<td>{{policy.date_of_birth.strftime('%d-%m-%Y')}}</td>
+													<td>{{policy.policy}}</td>
+													<td>{{policy.beginning_date.strftime('%d-%m-%Y')}}</td>
+													<td>{{policy.period_of_issuance}}</td>
+												</tr>
+											{% endif %}
+										{% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}

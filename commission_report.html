@@ -1,0 +1,53 @@
+{% extends "www/base_template.html" %}
+
+{% block activeCommissionReport %}active{% endblock activeCommissionReport %}
+{% block title %}Commission Report{% endblock title %}
+{% block user %}{{username}}{% endblock user %}
+{% block content %}
+
+<div class="dashboard-wrapper">
+    <div class="dashboard-influence">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-block">
+                        <h3 class="section-title">Commission Report</h3>
+                    </div>
+                    <div class="card">
+                        <div class="campaign-table table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr class="border-0">
+                                        <th class="border-0">Customer</th>
+                                        <th class="border-0">Issued Policy</th>
+                                        <th class="border-0">Policy</th>
+                                        <th class="border-0">Invoice Amount</th>
+                                        <th class="border-0">Commission Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for commission in commission_report %}
+											<tr>
+                                                <td>{{commission.customer}}</td>
+                                                <td>{{commission.issue_policy}}</td>
+                                                <td>{{commission.policy}}</td>
+                                                <td>{{commission.grand_total}}</td>
+                                                <td>{{commission.operator_commission_receivable}}</td>
+                                            </tr>
+									{% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}
