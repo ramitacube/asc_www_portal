@@ -1,0 +1,17 @@
+[Data Source]
+DisplayName=Contacts
+Enabled=true
+Parent=4136c0f556334423e2295d87f2b50b7b22bfcc01
+
+[Authentication]
+Host=www.google.com
+Method=OAuth2
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=ramit.panangat@acube.co
+CredentialName=
+IsExternal=false
+
+[Address Book]
+BackendName=google
