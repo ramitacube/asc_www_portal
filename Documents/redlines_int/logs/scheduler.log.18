@@ -1,0 +1,7 @@
+2023-11-20 16:18:05,449 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for redline.int.com
+2023-11-20 16:18:05,524 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for redline.int.com
+2023-11-20 16:18:05,692 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for redline.int.com
+2023-11-20 16:18:05,767 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for redline.int.com
+2023-11-20 16:18:05,929 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for redline.int.com
+2023-11-20 16:18:06,009 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for redline.int.com
+2023-11-20 16:18:06,131 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for redline.int.com

@@ -1,5 +1,3 @@
-git push
-ssh -X kmrladmin@65.1.208.240
 clear
 bench start
 ssh -X kmrladmin@65.1.208.240
@@ -1998,3 +1996,5 @@ ls
 cd solar_site_local
 bench start
 ls
+git add .
+git commit -m "Stagged"

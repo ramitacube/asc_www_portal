@@ -1,0 +1,3 @@
+2023-11-20 10:09:02,260 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for redline.int.com
+2023-11-20 10:09:02,354 INFO scheduler Scheduled Job Start: erpnext.support.doctype.issue.issue.set_service_level_agreement_variance for redline.int.com
+2023-11-20 10:09:02,561 INFO scheduler Scheduled Job Complete: erpnext.support.doctype.issue.issue.set_service_level_agreement_variance for redline.int.com

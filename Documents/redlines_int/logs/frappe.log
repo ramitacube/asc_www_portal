@@ -1,0 +1,138 @@
+2023-11-16 12:20:51,528 ERROR frappe New Exception collected with id: 2023-11-16 12:20:51.469704-127.0.0.1-857
+Site: redline.int.com
+Form Dict: {'cmd': 'a3trans.a3trans.events.api.get_vehicle_assigned'}
+2023-11-16 12:22:27,962 ERROR frappe New Exception collected with id: 2023-11-16 12:22:27.960123-127.0.0.1-aff
+Site: redline.int.com
+Form Dict: {'doctype': 'Vehicle Assignment', 'filters': '{"assignment_status": "Vehicle Assigned"}', 'cmd': 'a3trans.a3trans.events.api.get_vehicle_assigned'}
+2023-11-20 11:26:21,923 ERROR frappe New Exception collected with id: 2023-11-20 11:26:21.869643-127.0.0.1-c5a
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 11:27:15,105 ERROR frappe New Exception collected with id: 2023-11-20 11:27:15.049237-127.0.0.1-771
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 11:27:28,429 ERROR frappe New Exception collected with id: 2023-11-20 11:27:28.371255-127.0.0.1-fdc
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 11:27:51,116 ERROR frappe New Exception collected with id: 2023-11-20 11:27:51.058695-127.0.0.1-8bb
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 11:45:56,981 ERROR frappe New Exception collected with id: 2023-11-20 11:45:56.877019-127.0.0.1-4e8
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'vehicle_list': {'vehicle_type': '10 Ton', 'quantity': 1}, 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 11:48:08,281 ERROR frappe New Exception collected with id: 2023-11-20 11:48:08.224177-127.0.0.1-da6
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'vehicle_list': {'vehicle_type': '10 Ton', 'quantity': 1}, 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 14:44:20,533 ERROR frappe New Exception collected with id: 2023-11-20 14:44:20.445118-127.0.0.1-272
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'mobile_number': '9876547', 'vehicle_list': {'vehicle': [{'vehicle_type': '10 Ton', 'quantity': 1}, {'vehicle_type': '20 Ton', 'quantity': 1}]}, 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 14:46:14,701 ERROR frappe New Exception collected with id: 2023-11-20 14:46:14.640921-127.0.0.1-079
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'mobile_number': '9876547', 'vehicle_list': {'vehicle': [{'vehicle_type': '10 Ton', 'quantity': 1}, {'vehicle_type': '20 Ton', 'quantity': 1}]}, 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 14:55:17,151 ERROR frappe New Exception collected with id: 2023-11-20 14:55:17.080943-127.0.0.1-da9
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'mobile_number': '9876547', 'vehicle_list': {'vehicle': [{'vehicle_type': '10 Ton', 'quantity': 1}, {'vehicle_type': '20 Ton', 'quantity': 1}]}, 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 15:32:43,247 ERROR frappe New Exception collected with id: 2023-11-20 15:32:43.178963-127.0.0.1-9bf
+Site: redline.int.com
+Form Dict: {'lead_name': 'Anujoy', 'booking_type': 'Warehousing', 'mobile_number': '9876547', 'email_id': 'testemployee1@gmail.com', 'vehicle_list': {'vehicle': [{'vehicle_type': '10 Ton', 'quantity': 1}, {'vehicle_type': '20 Ton', 'quantity': 1}]}, 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 15:35:04,002 ERROR frappe New Exception collected with id: 2023-11-20 15:35:04.000052-127.0.0.1-27b
+Site: redline.int.com
+Form Dict: {'lead_name': 'Anujoy', 'booking_type': 'Warehousing', 'mobile_number': '9876547', 'email_id': 'testemployee1@gmail.com', 'vehicle_list': {'vehicle': [{'vehicle_type': '10 Ton', 'quantity': 1}, {'vehicle_type': '20 Ton', 'quantity': 1}]}, 'warehouse': 'Ajman - RI', 'cargo_type': 'Stackable', 'uom': 'Cubic Meter', 'booked_upto': '2024-12-2024', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 15:35:16,681 ERROR frappe New Exception collected with id: 2023-11-20 15:35:16.673318-127.0.0.1-6fb
+Site: redline.int.com
+Form Dict: {'lead_name': 'Anujoy', 'booking_type': 'Warehousing', 'mobile_number': '9876547', 'email_id': 'testemployee1@gmail.com', 'vehicle_list': {'vehicle': [{'vehicle_type': '10 Ton', 'quantity': 1}, {'vehicle_type': '20 Ton', 'quantity': 1}]}, 'warehouse': 'Ajman - RI', 'cargo_type': 'Stackable', 'uom': 'Cubic Meter', 'booked_upto': '2024-12-2024', 'required_area': 200, 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 15:35:29,463 ERROR frappe New Exception collected with id: 2023-11-20 15:35:29.458573-127.0.0.1-f4e
+Site: redline.int.com
+Form Dict: {'lead_name': 'Anujoy', 'booking_type': 'Warehousing', 'mobile_number': '9876547', 'email_id': 'testemployee1@gmail.com', 'vehicle_list': {'vehicle': [{'vehicle_type': '10 Ton', 'quantity': 1}, {'vehicle_type': '20 Ton', 'quantity': 1}]}, 'warehouse': 'Ajman - RI', 'cargo_type': 'Stackable', 'uom': 'Cubic Meter', 'booked_upto': '20-12-2024', 'required_area': 200, 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 15:43:53,561 ERROR frappe New Exception collected with id: 2023-11-20 15:43:53.472172-127.0.0.1-31c
+Site: redline.int.com
+Form Dict: {'lead_name': 'Anujoy', 'booking_type': 'Transport', 'mobile_number': '9876547', 'email_id': 'testemployee1@gmail.com', 'vehicle_list': {'vehicle': [{'vehicle_type': '1 Ton', 'quantity': 1}, {'vehicle_type': '3 Ton', 'quantity': 1}]}, 'warehouse': 'Ajman - RI', 'cargo_type': 'Stackable', 'uom': 'Cubic Meter', 'booked_upto': '2024-12-24', 'required_area': 200, 'pick_transit_type': 'Pickup', 'pick_city': 'London', 'pick_quantity': 5, 'pick_address_line1': 'London', 'pick_address_line2': 'London', 'latitude': '48916', 'longitude': '4891', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 15:44:24,431 ERROR frappe New Exception collected with id: 2023-11-20 15:44:24.429337-127.0.0.1-0e9
+Site: redline.int.com
+Form Dict: {'lead_name': 'Anujoy', 'booking_type': 'Transport', 'mobile_number': '9876547', 'email_id': 'testemployee1@gmail.com', 'vehicle_list': {'vehicle': [{'vehicle_type': '1 Ton', 'quantity': 1}, {'vehicle_type': '3 Ton', 'quantity': 1}]}, 'warehouse': 'Ajman - RI', 'cargo_type': 'Stackable', 'uom': 'Cubic Meter', 'booked_upto': '2024-12-24', 'required_area': 200, 'pick_transit_type': 'Pickup', 'pick_city': 'London', 'pick_quantity': 5, 'pick_address_line1': 'London', 'pick_address_line2': 'London', 'pick_latitude': '48916', 'pick_longitude': '4891', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 16:15:05,371 ERROR frappe New Exception collected with id: 2023-11-20 16:15:05.271034-127.0.0.1-589
+Site: redline.int.com
+Form Dict: {'lead_name': 'Anujoy', 'booking_type': 'Transport', 'mobile_number': '9876547', 'email_id': 'testemployee1@gmail.com', 'vehicle_list': {'vehicle': [{'vehicle_type': '1 Ton', 'quantity': 1}, {'vehicle_type': '3 Ton', 'quantity': 1}]}, 'warehouse': 'Ajman - RI', 'cargo_type': 'Stackable', 'uom': 'Cubic Meter', 'booked_upto': '2024-12-24', 'required_area': 200, 'pick_transit_type': 'Pickup', 'pick_city': 'London', 'pick_quantity': 5, 'pick_address_line1': 'London', 'pick_address_line2': 'London', 'pick_latitude': '48916', 'pick_longitude': '4891', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 16:15:29,716 ERROR frappe New Exception collected with id: 2023-11-20 16:15:29.639205-127.0.0.1-d19
+Site: redline.int.com
+Form Dict: {'lead_name': 'Anujoy', 'booking_type': 'Transport', 'mobile_number': '9876547', 'email_id': 'testemployee1@gmail.com', 'vehicle_list': {'vehicle': [{'vehicle_type': '1 Ton', 'quantity': 1}, {'vehicle_type': '3 Ton', 'quantity': 1}]}, 'warehouse': 'Ajman - RI', 'cargo_type': 'Stackable', 'uom': 'Cubic Meter', 'booked_upto': '2024-12-24', 'required_area': 200, 'pick_transit_type': 'Pickup', 'pick_city': 'London', 'pick_quantity': 5, 'pick_address_line1': 'London', 'pick_address_line2': 'London', 'pick_latitude': '48916', 'pick_longitude': '4891', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-20 16:16:23,808 ERROR frappe New Exception collected with id: 2023-11-20 16:16:23.745293-127.0.0.1-f40
+Site: redline.int.com
+Form Dict: {'lead_name': 'Anujoy', 'booking_type': 'Transport', 'mobile_number': '9876547', 'email_id': 'testemployee1@gmail.com', 'vehicle_list': {'vehicle': [{'vehicle_type': '1 Ton', 'quantity': 1}, {'vehicle_type': '3 Ton', 'quantity': 1}]}, 'warehouse': 'Ajman - RI', 'cargo_type': 'Stackable', 'uom': 'Cubic Meter', 'booked_upto': '2024-12-24', 'required_area': 200, 'pick_transit_type': 'Pickup', 'pick_city': 'London', 'pick_quantity': 5, 'pick_address_line1': 'London', 'pick_address_line2': 'London', 'pick_latitude': '48916', 'pick_longitude': '4891', 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-11-22 12:32:37,104 ERROR frappe New Exception collected with id: 2023-11-22 12:32:36.978707-127.0.0.1-efe
+Site: redline.int.com
+Form Dict: {'otp': '082471', 'mobile_no': '9558169961', 'client_id': 'f5171679cd', 'cmd': 'a3trans.api.authenticate_for_signup'}
+2023-11-22 12:33:12,970 ERROR frappe New Exception collected with id: 2023-11-22 12:33:12.966610-127.0.0.1-985
+Site: redline.int.com
+Form Dict: {'otp': '123456', 'mobile_no': '9558169962', 'client_id': 'f5171679cd', 'cmd': 'a3trans.api.authenticate_for_signup'}
+2023-11-22 13:51:52,047 ERROR frappe New Exception collected with id: 2023-11-22 13:51:51.963163-127.0.0.1-ba1
+Site: redline.int.com
+Form Dict: {'otp': '123456', 'mobile_no': '9558169966', 'client_id': 'f5171679cd', 'cmd': 'a3trans.api.authenticate_for_signup'}
+2023-11-22 13:53:28,327 ERROR frappe New Exception collected with id: 2023-11-22 13:53:28.258360-127.0.0.1-81c
+Site: redline.int.com
+Form Dict: {'otp': '123456', 'mobile_no': '9558169966', 'client_id': 'f5171679cd', 'cmd': 'a3trans.api.authenticate_for_signup'}
+2023-11-30 15:51:57,541 ERROR frappe New Exception collected with id: 2023-11-30 15:51:57.467283-127.0.0.1-8f0
+Site: redline.int.com
+Form Dict: {}
+2023-11-30 15:54:12,505 ERROR frappe New Exception collected with id: 2023-11-30 15:54:12.502426-127.0.0.1-83d
+Site: redline.int.com
+Form Dict: {'routes': {'idx': 1, 'status': 'Completed'}}
+2023-11-30 15:57:38,791 ERROR frappe New Exception collected with id: 2023-11-30 15:57:38.711061-127.0.0.1-7a9
+Site: redline.int.com
+Form Dict: {'routes': {'idx': 1, 'status': 'Completed'}}
+2023-11-30 15:58:18,807 ERROR frappe New Exception collected with id: 2023-11-30 15:58:18.733176-127.0.0.1-e76
+Site: redline.int.com
+Form Dict: {'routes': {'idx': 1, 'status': 'Completed'}}
+2023-11-30 16:01:14,571 ERROR frappe New Exception collected with id: 2023-11-30 16:01:14.495156-127.0.0.1-c2b
+Site: redline.int.com
+Form Dict: {'routes': {'idx': 1, 'status': 'Completed'}}
+2023-11-30 16:02:07,349 ERROR frappe New Exception collected with id: 2023-11-30 16:02:07.276452-127.0.0.1-bc8
+Site: redline.int.com
+Form Dict: {'routes': {'idx': 1, 'status': 'Completed'}}
+2023-11-30 16:03:30,927 ERROR frappe New Exception collected with id: 2023-11-30 16:03:30.856033-127.0.0.1-e93
+Site: redline.int.com
+Form Dict: {'routes': {'idx': 1, 'status': 'Completed'}}
+2023-11-30 16:06:50,293 ERROR frappe New Exception collected with id: 2023-11-30 16:06:50.219327-127.0.0.1-e72
+Site: redline.int.com
+Form Dict: {'routes': {'idx': 1, 'status': 'Completed'}}
+2023-11-30 16:07:33,864 ERROR frappe New Exception collected with id: 2023-11-30 16:07:33.784145-127.0.0.1-6b5
+Site: redline.int.com
+Form Dict: {'routes': {'idx': 1, 'status': 'Completed'}}
+2023-11-30 16:08:02,013 ERROR frappe New Exception collected with id: 2023-11-30 16:08:01.937293-127.0.0.1-3d2
+Site: redline.int.com
+Form Dict: {'routes': {'idx': 1, 'status': 'Completed'}}
+2023-11-30 16:09:12,524 ERROR frappe New Exception collected with id: 2023-11-30 16:09:12.522156-127.0.0.1-756
+Site: redline.int.com
+Form Dict: {'data': {'routes': {'idx': 1, 'status': 'Completed'}}}
+2023-11-30 16:11:19,174 ERROR frappe New Exception collected with id: 2023-11-30 16:11:19.093884-127.0.0.1-581
+Site: redline.int.com
+Form Dict: {'data': {'routes': {'idx': 1, 'status': 'Completed'}}}
+2023-11-30 16:11:50,799 ERROR frappe New Exception collected with id: 2023-11-30 16:11:50.676478-127.0.0.1-c48
+Site: redline.int.com
+Form Dict: {'data': {'routes': {'idx': 1, 'status': 'Completed'}}}
+2023-12-06 17:36:27,905 ERROR frappe New Exception collected with id: 2023-12-06 17:36:27.842358-127.0.0.1-196
+Site: redline.int.com
+Form Dict: {'otp': '123456', 'mobile_no': '9558169944', 'client_id': 'f5171679cd', 'cmd': 'a3trans.api.authenticate_for_signup'}
+2023-12-06 17:46:21,312 ERROR frappe New Exception collected with id: 2023-12-06 17:46:21.183973-127.0.0.1-26b
+Site: redline.int.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Lead","name":"new-lead-1","__islocal":1,"__unsaved":1,"owner":"Administrator","organization_lead":0,"naming_series":"CRM-LEAD-.YYYY.-","booking_channel":"Mobile App","lead_owner":"Administrator","status":"Lead","uom":"Cubic Meter","cargo_type":"Stackable","address_type":"Billing","country":"United Arab Emirates","type":"","request_type":"","company":"Redlines International","language":"en-US","unsubscribed":0,"blog_subscriber":0,"booking_date":"2023-12-06","booked_upto":"2023-12-31","lead_name":"Amra C","booking_type":"Transport","email_id":"amra@test.com","mobile_number":"9558169945","phone":"9558169945","mobile_no":"9558169945","transit_details_item":[{"docstatus":0,"doctype":"Transit Details Item","name":"new-transit-details-item-1","__islocal":1,"__unsaved":1,"owner":"Administrator","transit_type":"Pickup","parent":"new-lead-1","parentfield":"transit_details_item","parenttype":"Lead","idx":1,"__unedited":false,"city":"Dubai","zone":"Ajman","index":1,"quantity":2,"address_line1":"11th Floor","address_line2":"Cross Road"}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2023-12-06 17:46:36,839 ERROR frappe New Exception collected with id: 2023-12-06 17:46:36.821603-127.0.0.1-806
+Site: redline.int.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Lead","name":"new-lead-1","__islocal":1,"__unsaved":1,"owner":"Administrator","organization_lead":0,"naming_series":"CRM-LEAD-.YYYY.-","booking_channel":"Mobile App","lead_owner":"Administrator","status":"Lead","uom":"Cubic Meter","cargo_type":"Stackable","address_type":"Billing","country":"United Arab Emirates","type":"","request_type":"","company":"Redlines International","language":"en-US","unsubscribed":0,"blog_subscriber":0,"booking_date":"2023-12-06","booked_upto":"2023-12-31","lead_name":"Amra C","booking_type":"Transport","email_id":"amra@test.com","mobile_number":"9558169945","phone":"9558169945","mobile_no":"9558169945","transit_details_item":[{"docstatus":0,"doctype":"Transit Details Item","name":"new-transit-details-item-1","__islocal":1,"__unsaved":1,"owner":"Administrator","transit_type":"Pickup","parent":"new-lead-1","parentfield":"transit_details_item","parenttype":"Lead","idx":1,"__unedited":false,"city":"Dubai","zone":"Ajman","index":1,"quantity":2,"address_line1":"11th Floor","address_line2":"Cross Road"}],"vehicle_list":[{"docstatus":0,"doctype":"Vehicle List","name":"new-vehicle-list-1","__islocal":1,"__unsaved":1,"owner":"Administrator","parent":"new-lead-1","parentfield":"vehicle_list","parenttype":"Lead","idx":1,"__unedited":false,"vehicle_type":"10 Ton","quantity":5}]}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2023-12-21 16:47:55,331 ERROR frappe New Exception collected with id: 2023-12-21 16:47:55.262784-127.0.0.1-aeb
+Site: redline.int.com
+Form Dict: {}
+2023-12-21 16:55:08,689 ERROR frappe New Exception collected with id: 2023-12-21 16:55:08.616595-127.0.0.1-2a3
+Site: redline.int.com
+Form Dict: {}
+2023-12-21 16:57:56,441 ERROR frappe New Exception collected with id: 2023-12-21 16:57:56.381343-127.0.0.1-b09
+Site: redline.int.com
+Form Dict: {}
+2023-12-21 16:58:24,929 ERROR frappe New Exception collected with id: 2023-12-21 16:58:24.927990-127.0.0.1-b29
+Site: redline.int.com
+Form Dict: {}
+2023-12-21 16:58:44,242 ERROR frappe New Exception collected with id: 2023-12-21 16:58:44.225835-127.0.0.1-ebf
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'remarks': 'Test', 'pick_transit_type': 'Pickup', 'pick_city': 'Dubai', 'pick_zone': 'Ras Al Khaima', 'pick_quantity': 0, 'pick_address_line1': '11th Floor', 'pick_address_line2': 'Opp Hospital ', 'pick_latitude': 25.8006926, 'pick_longitude': 55.9761994, 'pick_location': 'Ras Al-Khaimah - Ras al Khaimah', 'drop_transit_type': 'Dropoff', 'drop_city': 'Dubai', 'drop_zone': 'Al Ain', 'drop_quantity': 0, 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_latitude': 24.1301619, 'drop_longitude': 55.8023118, 'drop_location': 'Al Ain - Abu Dhabi', 'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'stop_address': {'stops': []}, 'vehicle_type': {'vehicle_selected': [{'vehicle': 'CAR', 'quantity': 2}]}, 'no_of_pack': 25, 'prod_uom': 'Kg', 'prod_weight': 50, 'commodity': 'Clothing', 'package_type': 'Box', 'lead_name': 'Amritha Menon', 'email_id': 'amrutha@test.con', 'mobile_number': 9719558161234, 'cmd': 'a3trans.a3trans.events.api.create_booking'}
+2023-12-21 17:00:23,396 ERROR frappe New Exception collected with id: 2023-12-21 17:00:23.391786-127.0.0.1-36c
+Site: redline.int.com
+Form Dict: {'booking_type': 'Transport', 'remarks': 'Test', 'pick_transit_type': 'Pickup', 'pick_city': 'Dubai', 'pick_zone': 'Ras Al Khaima', 'pick_quantity': 0, 'pick_address_line1': '11th Floor', 'pick_address_line2': 'Opp Hospital ', 'pick_latitude': 25.8006926, 'pick_longitude': 55.9761994, 'pick_location': 'Ras Al-Khaimah - Ras al Khaimah', 'drop_transit_type': 'Dropoff', 'drop_city': 'Dubai', 'drop_zone': 'Al Ain', 'drop_quantity': 0, 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_latitude': 24.1301619, 'drop_longitude': 55.8023118, 'drop_location': 'Al Ain - Abu Dhabi', 'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'stop_address': {'stops': []}, 'vehicle_type': {'vehicle_selected': [{'vehicle': '1 Ton', 'quantity': 2}]}, 'no_of_pack': 25, 'prod_uom': 'Kg', 'prod_weight': 50, 'commodity': 'Clothing', 'package_type': 'Box', 'lead_name': 'Amritha Menon', 'email_id': 'amrutha@test.con', 'mobile_number': 9719558161234, 'file_path': '/files/Booking_Type.csv', 'cmd': 'a3trans.a3trans.events.api.create_booking'}

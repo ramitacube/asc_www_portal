@@ -1,0 +1,215 @@
+{
+ "etype": "KeyError",
+ "evalue": "KeyError('file_path')",
+ "exception": {
+  "args": [
+   40,
+   39,
+   102,
+   105,
+   108,
+   101,
+   95,
+   112,
+   97,
+   116,
+   104,
+   39,
+   44,
+   41
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   75,
+   101,
+   121,
+   69,
+   114,
+   114,
+   111,
+   114,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://redline.int.com:8027/api/method/a3trans.a3trans.events.api.create_booking' [POST]>)",
+   "dump": {
+    "frappe. api": "<module 'frappe.api' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/api.py'>",
+    "frappe.api. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py'>",
+    "response": "None"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "64": "",
+    "65": "\t\telif request.path.startswith(\"/api/\"):",
+    "66": "\t\t\tresponse = frappe.api.handle()",
+    "67": "",
+    "68": "\t\telif request.path.startswith(\"/backups\"):"
+   },
+   "lnum": 66
+  },
+  {
+   "call": "()",
+   "dump": {
+    "frappe. handler": "<module 'frappe.handler' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py'>",
+    "frappe.handler. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/api.py",
+   "func": "handle",
+   "lines": {
+    "53": "\tif call == \"method\":",
+    "54": "\t\tfrappe.local.form_dict.cmd = doctype",
+    "55": "\t\treturn frappe.handler.handle()",
+    "56": "",
+    "57": "\telif call == \"resource\":"
+   },
+   "lnum": 55
+  },
+  {
+   "call": "()",
+   "dump": {
+    "cmd": "'a3trans.a3trans.events.api.create_booking'",
+    "data": "None",
+    "global execute_cmd": "<function execute_cmd>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py",
+   "func": "handle",
+   "lines": {
+    "36": "",
+    "37": "\tif cmd != \"login\":",
+    "38": "\t\tdata = execute_cmd(cmd)",
+    "39": "",
+    "40": "\t# data can be an empty string or list which are valid responses"
+   },
+   "lnum": 38
+  },
+  {
+   "call": "(cmd='a3trans.a3trans.events.api.create_booking', from_async=False)",
+   "dump": {
+    "frappe. call": "<function call>",
+    "frappe. form_dict": "{'booking_type': 'Transport', 'remarks': 'Test',...md': 'a3trans.a3trans.events.api.create_booking'}",
+    "global frappe": "<module 'frappe' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py'>",
+    "method": "<function create_booking>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py",
+   "func": "execute_cmd",
+   "lines": {
+    "74": "\t\tis_valid_http_method(method)",
+    "75": "",
+    "76": "\treturn frappe.call(method, **frappe.form_dict)",
+    "77": "",
+    "78": ""
+   },
+   "lnum": 76
+  },
+  {
+   "call": "(fn=<function create_booking>, *args=(), **kwargs={'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...})",
+   "dump": {
+    "args": "()",
+    "fn": "<function create_booking>",
+    "newargs": "{'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...}"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py",
+   "func": "call",
+   "lines": {
+    "1472": "\tnewargs = get_newargs(fn, kwargs)",
+    "1473": "",
+    "1474": "\treturn fn(*args, **newargs)",
+    "1475": "",
+    "1476": ""
+   },
+   "lnum": 1474
+  },
+  {
+   "call": "(**kwargs={'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...})",
+   "dump": {
+    "booking_type": "<BookingType: Transport>",
+    "global create_new_lead": "<function create_new_lead>",
+    "kwargs": "{'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...}",
+    "leadName": "undefined"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/a3trans/a3trans/a3trans/events/api.py",
+   "func": "create_booking",
+   "lines": {
+    "47": "            return opp.as_dict()",
+    "48": "    else:",
+    "49": "        leadName = create_new_lead(kwargs, booking_type, False)",
+    "50": "        return leadName.as_dict()",
+    "51": ""
+   },
+   "lnum": 49
+  },
+  {
+   "call": "(data={'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...}, booking_type=<BookingType: Transport>, hasPrev=False)",
+   "dump": {
+    "data": "{'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...}",
+    "lead": "<Lead: unsaved>",
+    "lead. packing_list": "None"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/a3trans/a3trans/a3trans/events/api.py",
+   "func": "create_new_lead",
+   "lines": {
+    "66": "    lead.remarks = data[\"remarks\"]",
+    "67": "    lead.multiple_vehicles = 1",
+    "68": "    lead.packing_list = data[\"file_path\"]",
+    "69": "    tariff = frappe.get_doc(\"Tariff Details\", {\"is_standard\": 1})",
+    "70": "    for service in data[\"addition_service\"][\"services\"]:"
+   },
+   "lnum": 68
+  }
+ ],
+ "locals": {
+  "booking_type": "<BookingType: Transport>",
+  "data": "{'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...}",
+  "hasPrev": "False",
+  "lead": "<Lead: unsaved>"
+ },
+ "pyver": "Python 3.8.10: /home/acube/Documents/redlines_int/env/bin/python (prefix: /home/acube/Documents/redlines_int/env)",
+ "timestamp": "2023-12-21 16:58:44.225916",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/app.py\", line 66, in application\n    response = frappe.api.handle()\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/api.py\", line 55, in handle\n    return frappe.handler.handle()\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py\", line 38, in handle\n    data = execute_cmd(cmd)\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py\", line 76, in execute_cmd\n    return frappe.call(method, **frappe.form_dict)\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py\", line 1474, in call\n    return fn(*args, **newargs)\n  File \"/home/acube/Documents/redlines_int/apps/a3trans/a3trans/a3trans/events/api.py\", line 49, in create_booking\n    leadName = create_new_lead(kwargs, booking_type, False)\n  File \"/home/acube/Documents/redlines_int/apps/a3trans/a3trans/a3trans/events/api.py\", line 68, in create_new_lead\n    lead.packing_list = data[\"file_path\"]\nKeyError: 'file_path'\n"
+}

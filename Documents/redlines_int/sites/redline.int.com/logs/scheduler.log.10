@@ -1,0 +1,2 @@
+2023-11-30 15:42:22,214 INFO scheduler Scheduled Job Start: erpnext.non_profit.doctype.membership.membership.set_expired_status for redline.int.com
+2023-11-30 15:42:22,434 INFO scheduler Scheduled Job Complete: erpnext.non_profit.doctype.membership.membership.set_expired_status for redline.int.com

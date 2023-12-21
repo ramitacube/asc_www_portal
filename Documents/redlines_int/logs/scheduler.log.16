@@ -1,0 +1,6 @@
+2023-11-22 12:35:05,068 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for redline.int.com
+2023-11-22 12:35:05,691 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for redline.int.com
+2023-11-22 12:35:05,850 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for redline.int.com
+2023-11-22 12:35:06,328 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for redline.int.com
+2023-11-22 12:35:06,487 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for redline.int.com
+2023-11-22 12:35:06,766 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for redline.int.com

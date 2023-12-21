@@ -1,0 +1,353 @@
+{
+ "etype": "AttributeError",
+ "evalue": "AttributeError(\"'int' object has no attribute 'strip'\")",
+ "exception": {
+  "args": [
+   40,
+   34,
+   39,
+   105,
+   110,
+   116,
+   39,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   32,
+   104,
+   97,
+   115,
+   32,
+   110,
+   111,
+   32,
+   97,
+   116,
+   116,
+   114,
+   105,
+   98,
+   117,
+   116,
+   101,
+   32,
+   39,
+   115,
+   116,
+   114,
+   105,
+   112,
+   39,
+   34,
+   44,
+   41
+  ],
+  "with_traceback": [
+   60,
+   98,
+   117,
+   105,
+   108,
+   116,
+   45,
+   105,
+   110,
+   32,
+   109,
+   101,
+   116,
+   104,
+   111,
+   100,
+   32,
+   119,
+   105,
+   116,
+   104,
+   95,
+   116,
+   114,
+   97,
+   99,
+   101,
+   98,
+   97,
+   99,
+   107,
+   32,
+   111,
+   102,
+   32,
+   65,
+   116,
+   116,
+   114,
+   105,
+   98,
+   117,
+   116,
+   101,
+   69,
+   114,
+   114,
+   111,
+   114,
+   32,
+   111,
+   98,
+   106,
+   101,
+   99,
+   116,
+   62
+  ]
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://redline.int.com:8027/api/method/a3trans.a3trans.events.api.create_booking' [POST]>)",
+   "dump": {
+    "frappe. api": "<module 'frappe.api' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/api.py'>",
+    "frappe.api. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py'>",
+    "response": "None"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "64": "",
+    "65": "\t\telif request.path.startswith(\"/api/\"):",
+    "66": "\t\t\tresponse = frappe.api.handle()",
+    "67": "",
+    "68": "\t\telif request.path.startswith(\"/backups\"):"
+   },
+   "lnum": 66
+  },
+  {
+   "call": "()",
+   "dump": {
+    "frappe. handler": "<module 'frappe.handler' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py'>",
+    "frappe.handler. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py'>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/api.py",
+   "func": "handle",
+   "lines": {
+    "53": "\tif call == \"method\":",
+    "54": "\t\tfrappe.local.form_dict.cmd = doctype",
+    "55": "\t\treturn frappe.handler.handle()",
+    "56": "",
+    "57": "\telif call == \"resource\":"
+   },
+   "lnum": 55
+  },
+  {
+   "call": "()",
+   "dump": {
+    "cmd": "'a3trans.a3trans.events.api.create_booking'",
+    "data": "None",
+    "global execute_cmd": "<function execute_cmd>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py",
+   "func": "handle",
+   "lines": {
+    "36": "",
+    "37": "\tif cmd != \"login\":",
+    "38": "\t\tdata = execute_cmd(cmd)",
+    "39": "",
+    "40": "\t# data can be an empty string or list which are valid responses"
+   },
+   "lnum": 38
+  },
+  {
+   "call": "(cmd='a3trans.a3trans.events.api.create_booking', from_async=False)",
+   "dump": {
+    "frappe. call": "<function call>",
+    "frappe. form_dict": "{'booking_type': 'Transport', 'remarks': 'Test',...md': 'a3trans.a3trans.events.api.create_booking'}",
+    "global frappe": "<module 'frappe' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py'>",
+    "method": "<function create_booking>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py",
+   "func": "execute_cmd",
+   "lines": {
+    "74": "\t\tis_valid_http_method(method)",
+    "75": "",
+    "76": "\treturn frappe.call(method, **frappe.form_dict)",
+    "77": "",
+    "78": ""
+   },
+   "lnum": 76
+  },
+  {
+   "call": "(fn=<function create_booking>, *args=(), **kwargs={'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...})",
+   "dump": {
+    "args": "()",
+    "fn": "<function create_booking>",
+    "newargs": "{'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...}"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py",
+   "func": "call",
+   "lines": {
+    "1472": "\tnewargs = get_newargs(fn, kwargs)",
+    "1473": "",
+    "1474": "\treturn fn(*args, **newargs)",
+    "1475": "",
+    "1476": ""
+   },
+   "lnum": 1474
+  },
+  {
+   "call": "(**kwargs={'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...})",
+   "dump": {
+    "booking_type": "<BookingType: Transport>",
+    "global create_new_lead": "<function create_new_lead>",
+    "kwargs": "{'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...}",
+    "leadName": "undefined"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/a3trans/a3trans/a3trans/events/api.py",
+   "func": "create_booking",
+   "lines": {
+    "47": "            return opp.as_dict()",
+    "48": "    else:",
+    "49": "        leadName = create_new_lead(kwargs, booking_type, False)",
+    "50": "        return leadName.as_dict()",
+    "51": ""
+   },
+   "lnum": 49
+  },
+  {
+   "call": "(data={'addition_service': {'services': [{'service': 'Palletization Charge (per pallet)'}, {'service': ' Handling IN (loose cargo)'}]}, 'booking_type': 'Transport', 'cmd': 'a3trans.a3trans.events.api.create_booking', 'commodity': 'Clothing', 'drop_address_line1': '5th Floor', 'drop_address_line2': 'Opp School', 'drop_city': 'Dubai', 'drop_latitude': 24.1301619, 'drop_location': 'Al Ain - Abu Dhabi', 'drop_longitude': 55.8023118, ...}, booking_type=<BookingType: Transport>, hasPrev=False)",
+   "dump": {
+    "lead": "<Lead: CRM-LEAD-2023-00025>",
+    "lead. save": "<bound method Document.save of <Lead: CRM-LEAD-2023-00025>>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/a3trans/a3trans/a3trans/events/api.py",
+   "func": "create_new_lead",
+   "lines": {
+    "137": "        })",
+    "138": "",
+    "139": "    lead.save()",
+    "140": "    return lead",
+    "141": ""
+   },
+   "lnum": 139
+  },
+  {
+   "call": "(self=<Lead: CRM-LEAD-2023-00025>, *args=(), **kwargs={})",
+   "dump": {
+    "args": "()",
+    "kwargs": "{}",
+    "self": "<Lead: CRM-LEAD-2023-00025>",
+    "self. _save": "<bound method Document._save of <Lead: CRM-LEAD-2023-00025>>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/model/document.py",
+   "func": "save",
+   "lines": {
+    "310": "\tdef save(self, *args, **kwargs):",
+    "311": "\t\t\"\"\"Wrapper for _save\"\"\"",
+    "312": "\t\treturn self._save(*args, **kwargs)",
+    "313": "",
+    "314": "\tdef _save(self, ignore_permissions=None, ignore_version=None):"
+   },
+   "lnum": 312
+  },
+  {
+   "call": "(self=<Lead: CRM-LEAD-2023-00025>, ignore_permissions=None, ignore_version=None)",
+   "dump": {
+    "self": "<Lead: CRM-LEAD-2023-00025>",
+    "self. insert": "<bound method Document.insert of <Lead: CRM-LEAD-2023-00025>>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/model/document.py",
+   "func": "_save",
+   "lines": {
+    "332": "",
+    "333": "\t\tif self.get(\"__islocal\") or not self.get(\"name\"):",
+    "334": "\t\t\treturn self.insert()",
+    "335": "",
+    "336": "\t\tself.check_permission(\"write\", \"save\")"
+   },
+   "lnum": 334
+  },
+  {
+   "call": "(self=<Lead: CRM-LEAD-2023-00025>, ignore_permissions=None, ignore_links=None, ignore_if_duplicate=False, ignore_mandatory=None, set_name=None, set_child_names=True)",
+   "dump": {
+    "self": "<Lead: CRM-LEAD-2023-00025>",
+    "self. _validate": "<bound method Document._validate of <Lead: CRM-LEAD-2023-00025>>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/model/document.py",
+   "func": "insert",
+   "lines": {
+    "262": "\t\tself.flags.in_insert = True",
+    "263": "\t\tself.run_before_save_methods()",
+    "264": "\t\tself._validate()",
+    "265": "\t\tself.set_docstatus()",
+    "266": "\t\tself.flags.in_insert = False"
+   },
+   "lnum": 264
+  },
+  {
+   "call": "(self=<Lead: CRM-LEAD-2023-00025>)",
+   "dump": {
+    "self": "<Lead: CRM-LEAD-2023-00025>",
+    "self. _validate_data_fields": "<bound method BaseDocument._validate_data_fields of <Lead: CRM-LEAD-2023-00025>>"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/model/document.py",
+   "func": "_validate",
+   "lines": {
+    "539": "\tdef _validate(self):",
+    "540": "\t\tself._validate_mandatory()",
+    "541": "\t\tself._validate_data_fields()",
+    "542": "\t\tself._validate_selects()",
+    "543": "\t\tself._validate_non_negative()"
+   },
+   "lnum": 541
+  },
+  {
+   "call": "(self=<Lead: CRM-LEAD-2023-00025>)",
+   "dump": {
+    "data": "9719558161234",
+    "frappe. utils": "<module 'frappe.utils' from '/home/acube/Documen...dlines_int/apps/frappe/frappe/utils/__init__.py'>",
+    "frappe.utils. validate_phone_number": "<function validate_phone_number>",
+    "global frappe": "<module 'frappe' from '/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py'>",
+    "throw": "undefined"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/model/base_document.py",
+   "func": "_validate_data_fields",
+   "lines": {
+    "747": "",
+    "748": "\t\t\tif data_field_options == \"Phone\":",
+    "749": "\t\t\t\tfrappe.utils.validate_phone_number(data, throw=True)",
+    "750": "",
+    "751": "\t\t\tif data_field_options == \"URL\":"
+   },
+   "lnum": 749
+  },
+  {
+   "call": "(phone_number=9719558161234, throw=True)",
+   "dump": {
+    "phone_number": "9719558161234",
+    "phone_number.strip": "undefined"
+   },
+   "file": "/home/acube/Documents/redlines_int/apps/frappe/frappe/utils/__init__.py",
+   "func": "validate_phone_number",
+   "lines": {
+    "103": "\t\treturn False",
+    "104": "",
+    "105": "\tphone_number = phone_number.strip()",
+    "106": "\tmatch = re.match(r\"([0-9\\ \\+\\_\\-\\,\\.\\*\\#\\(\\)]){1,20}$\", phone_number)",
+    "107": ""
+   },
+   "lnum": 105
+  }
+ ],
+ "locals": {
+  "phone_number": "9719558161234",
+  "throw": "True"
+ },
+ "pyver": "Python 3.8.10: /home/acube/Documents/redlines_int/env/bin/python (prefix: /home/acube/Documents/redlines_int/env)",
+ "timestamp": "2023-12-21 17:00:23.391863",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/app.py\", line 66, in application\n    response = frappe.api.handle()\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/api.py\", line 55, in handle\n    return frappe.handler.handle()\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py\", line 38, in handle\n    data = execute_cmd(cmd)\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/handler.py\", line 76, in execute_cmd\n    return frappe.call(method, **frappe.form_dict)\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/__init__.py\", line 1474, in call\n    return fn(*args, **newargs)\n  File \"/home/acube/Documents/redlines_int/apps/a3trans/a3trans/a3trans/events/api.py\", line 49, in create_booking\n    leadName = create_new_lead(kwargs, booking_type, False)\n  File \"/home/acube/Documents/redlines_int/apps/a3trans/a3trans/a3trans/events/api.py\", line 139, in create_new_lead\n    lead.save()\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/model/document.py\", line 312, in save\n    return self._save(*args, **kwargs)\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/model/document.py\", line 334, in _save\n    return self.insert()\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/model/document.py\", line 264, in insert\n    self._validate()\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/model/document.py\", line 541, in _validate\n    self._validate_data_fields()\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/model/base_document.py\", line 749, in _validate_data_fields\n    frappe.utils.validate_phone_number(data, throw=True)\n  File \"/home/acube/Documents/redlines_int/apps/frappe/frappe/utils/__init__.py\", line 105, in validate_phone_number\n    phone_number = phone_number.strip()\nAttributeError: 'int' object has no attribute 'strip'\n"
+}

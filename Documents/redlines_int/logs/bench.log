@@ -1,0 +1,287 @@
+2023-11-16 11:20:22,717 DEBUG cd /home/acube/Documents/redlines_int && /usr/bin/virtualenv --quiet env -p python3
+2023-11-16 11:20:23,489 DEBUG cd /home/acube/Documents/redlines_int && /home/acube/Documents/redlines_int/env/bin/python -m pip install --quiet --upgrade pip
+2023-11-16 11:20:26,584 LOG Getting frappe
+2023-11-16 11:20:26,584 DEBUG cd redlines_int/apps && git clone https://github.com/frappe/frappe.git --branch version-13 --depth 1 --origin upstream
+2023-11-16 11:20:33,841 LOG Installing frappe
+2023-11-16 11:20:33,842 DEBUG cd /home/acube/Documents/redlines_int && /home/acube/Documents/redlines_int/env/bin/python -m pip install --quiet --upgrade -e /home/acube/Documents/redlines_int/apps/frappe 
+2023-11-16 11:21:14,601 DEBUG cd /home/acube/Documents/redlines_int/apps/frappe && yarn install
+2023-11-16 11:21:29,614 DEBUG cd redlines_int && bench build
+2023-11-16 11:21:30,002 INFO /home/acube/.local/bin/bench build
+2023-11-16 11:22:39,623 LOG setting up backups
+2023-11-16 11:22:39,677 LOG backups were set up
+2023-11-16 11:22:39,678 INFO Bench redlines_int initialized
+2023-11-16 11:23:03,054 INFO /home/acube/.local/bin/bench new-site redlines.api
+2023-11-16 11:23:06,480 INFO /home/acube/.local/bin/bench new-site redlines.api
+2023-11-16 11:23:25,088 INFO /home/acube/.local/bin/bench new-site redline.int.com
+2023-11-16 11:24:19,760 INFO /home/acube/.local/bin/bench get-app --branch version-13 erpnext
+2023-11-16 11:24:20,922 LOG Getting erpnext
+2023-11-16 11:24:20,923 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-13 --depth 1 --origin upstream
+2023-11-16 11:24:26,712 LOG Installing erpnext
+2023-11-16 11:24:26,712 DEBUG cd /home/acube/Documents/redlines_int && /home/acube/Documents/redlines_int/env/bin/python -m pip install --quiet --upgrade -e /home/acube/Documents/redlines_int/apps/erpnext 
+2023-11-16 11:24:44,300 DEBUG cd /home/acube/Documents/redlines_int/apps/erpnext && yarn install
+2023-11-16 11:24:46,034 DEBUG bench build --app erpnext
+2023-11-16 11:24:46,410 INFO /home/acube/.local/bin/bench build --app erpnext
+2023-11-16 11:25:58,772 INFO /home/acube/.local/bin/bench --site redlines.site install-app erpnext
+2023-11-16 11:26:28,150 INFO /home/acube/.local/bin/bench --site redlines.int.com install-app erpnext
+2023-11-16 11:26:36,816 INFO /home/acube/.local/bin/bench --site redline.int.com install-app erpnext
+2023-11-16 11:28:43,193 INFO /home/acube/.local/bin/bench get-app https://github.com/nijinaacube/A3-General.git
+2023-11-16 11:28:43,923 LOG Getting A3-General
+2023-11-16 11:28:43,923 DEBUG cd ./apps && git clone https://github.com/nijinaacube/A3-General.git  --depth 1 --origin upstream
+2023-11-16 11:28:45,279 LOG Installing a3trans
+2023-11-16 11:28:45,280 DEBUG cd /home/acube/Documents/redlines_int && /home/acube/Documents/redlines_int/env/bin/python -m pip install --quiet --upgrade -e /home/acube/Documents/redlines_int/apps/a3trans 
+2023-11-16 11:28:47,662 DEBUG bench build --app a3trans
+2023-11-16 11:28:47,859 INFO /home/acube/.local/bin/bench build --app a3trans
+2023-11-16 11:28:59,770 INFO /home/acube/.local/bin/bench --site redline.int.com install-app a3trans
+2023-11-16 11:30:50,897 INFO /home/acube/.local/bin/bench --site redline.int.com add-to-hosts
+2023-11-16 11:31:11,556 INFO /home/acube/.local/bin/bench start
+2023-11-16 11:33:01,701 INFO /home/acube/.local/bin/bench start
+2023-11-16 11:33:03,527 INFO /home/acube/.local/bin/bench schedule
+2023-11-16 11:33:03,579 INFO /home/acube/.local/bin/bench watch
+2023-11-16 11:33:03,581 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-16 11:33:03,592 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-16 11:33:03,594 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-16 11:33:03,595 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-16 11:33:21,372 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-11-16 11:40:43,087 INFO /home/acube/.local/bin/bench start
+2023-11-16 11:40:44,810 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-16 11:40:44,817 INFO /home/acube/.local/bin/bench schedule
+2023-11-16 11:40:44,822 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-16 11:40:44,822 INFO /home/acube/.local/bin/bench watch
+2023-11-16 11:40:44,846 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-16 11:40:44,886 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-16 11:48:53,701 INFO /home/acube/.local/bin/bench --site reedline.int.com restore /home/acube/Downloads/20231116_040303-redlinestest_frappe_cloud-database.sql.gz
+2023-11-16 11:49:06,019 INFO /home/acube/.local/bin/bench --site redline.int.com restore /home/acube/Downloads/20231116_040303-redlinestest_frappe_cloud-database.sql.gz
+2023-11-16 12:00:02,015 INFO /home/acube/.local/bin/bench --verbose --site all backup
+2023-11-20 10:07:43,747 INFO /home/acube/.local/bin/bench start
+2023-11-20 10:07:46,476 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-20 10:07:46,482 INFO /home/acube/.local/bin/bench schedule
+2023-11-20 10:07:46,512 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-20 10:07:46,529 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-20 10:07:46,540 INFO /home/acube/.local/bin/bench watch
+2023-11-20 10:07:46,563 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-20 11:15:19,556 INFO /home/acube/.local/bin/bench --site redline.int.com set-admin-password
+2023-11-20 11:19:27,747 INFO /home/acube/.local/bin/bench --site redline.int.com set-admin-password importRed
+2023-11-20 11:19:34,716 INFO /home/acube/.local/bin/bench start
+2023-11-20 11:19:36,936 INFO /home/acube/.local/bin/bench watch
+2023-11-20 11:19:36,967 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-20 11:19:37,065 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-20 11:19:37,131 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-20 11:19:37,173 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-20 11:19:37,183 INFO /home/acube/.local/bin/bench schedule
+2023-11-20 11:31:29,777 INFO /home/acube/.local/bin/bench start
+2023-11-20 11:31:31,408 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-20 11:31:31,471 INFO /home/acube/.local/bin/bench schedule
+2023-11-20 11:31:31,473 INFO /home/acube/.local/bin/bench watch
+2023-11-20 11:31:31,514 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-20 11:31:31,582 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-20 11:31:31,705 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-20 11:44:44,431 INFO /home/acube/.local/bin/bench start
+2023-11-20 11:44:46,080 INFO /home/acube/.local/bin/bench schedule
+2023-11-20 11:44:46,115 INFO /home/acube/.local/bin/bench watch
+2023-11-20 11:44:46,159 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-20 11:44:46,169 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-20 11:44:46,181 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-20 11:44:46,210 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-20 12:00:02,380 INFO /home/acube/.local/bin/bench --verbose --site all backup
+2023-11-20 14:33:41,754 INFO /home/acube/.local/bin/bench start
+2023-11-20 14:33:44,310 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-20 14:33:44,324 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-20 14:33:44,334 INFO /home/acube/.local/bin/bench watch
+2023-11-20 14:33:44,405 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-20 14:33:44,419 INFO /home/acube/.local/bin/bench schedule
+2023-11-20 14:33:44,462 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-20 14:35:32,983 INFO /home/acube/.local/bin/bench start
+2023-11-20 14:35:35,466 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-20 14:35:35,467 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-20 14:35:35,510 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-20 14:35:35,518 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-20 14:35:35,526 INFO /home/acube/.local/bin/bench watch
+2023-11-20 14:35:35,565 INFO /home/acube/.local/bin/bench schedule
+2023-11-21 17:00:06,256 INFO /home/acube/.local/bin/bench --site redlines.int.com migrate
+2023-11-21 17:00:20,579 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-11-21 17:00:35,707 INFO /home/acube/.local/bin/bench start
+2023-11-21 17:00:37,686 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-21 17:00:37,701 INFO /home/acube/.local/bin/bench schedule
+2023-11-21 17:00:37,718 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-21 17:00:37,727 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-21 17:00:37,750 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-21 17:00:37,797 INFO /home/acube/.local/bin/bench watch
+2023-11-21 17:00:39,879 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-11-21 17:12:07,027 INFO /home/acube/.local/bin/bench start
+2023-11-21 17:12:09,054 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-21 17:12:09,061 INFO /home/acube/.local/bin/bench schedule
+2023-11-21 17:12:09,153 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-21 17:12:09,161 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-21 17:12:09,169 INFO /home/acube/.local/bin/bench watch
+2023-11-21 17:12:09,186 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-21 17:12:23,765 INFO /home/acube/.local/bin/bench start
+2023-11-21 17:12:25,641 INFO /home/acube/.local/bin/bench watch
+2023-11-21 17:12:25,646 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-21 17:12:25,650 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-21 17:12:25,659 INFO /home/acube/.local/bin/bench schedule
+2023-11-21 17:12:25,742 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-21 17:12:25,750 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-22 12:28:48,541 INFO /home/acube/.local/bin/bench start
+2023-11-22 12:28:51,978 INFO /home/acube/.local/bin/bench schedule
+2023-11-22 12:28:51,994 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-22 12:28:52,033 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-22 12:28:52,041 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-22 12:28:52,079 INFO /home/acube/.local/bin/bench watch
+2023-11-22 12:28:52,147 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-22 12:29:26,107 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-11-22 13:45:39,904 INFO /home/acube/.local/bin/bench start
+2023-11-22 13:45:41,508 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-22 13:45:41,556 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-22 13:45:41,573 INFO /home/acube/.local/bin/bench watch
+2023-11-22 13:45:41,575 INFO /home/acube/.local/bin/bench schedule
+2023-11-22 13:45:41,656 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-22 13:45:41,738 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-22 13:50:45,952 INFO /home/acube/.local/bin/bench start
+2023-11-22 13:50:47,761 INFO /home/acube/.local/bin/bench schedule
+2023-11-22 13:50:47,767 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-22 13:50:47,795 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-22 13:50:47,800 INFO /home/acube/.local/bin/bench watch
+2023-11-22 13:50:47,805 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-22 13:50:47,903 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-22 13:53:44,864 INFO /home/acube/.local/bin/bench start
+2023-11-22 13:53:46,461 INFO /home/acube/.local/bin/bench schedule
+2023-11-22 13:53:46,480 INFO /home/acube/.local/bin/bench watch
+2023-11-22 13:53:46,500 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-22 13:53:46,506 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-22 13:53:46,549 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-22 13:53:46,600 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-22 15:04:59,483 INFO /home/acube/.local/bin/bench start
+2023-11-22 15:05:01,094 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-22 15:05:01,099 INFO /home/acube/.local/bin/bench schedule
+2023-11-22 15:05:01,100 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-22 15:05:01,108 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-22 15:05:01,173 INFO /home/acube/.local/bin/bench watch
+2023-11-22 15:05:01,318 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-22 15:45:56,555 INFO /home/acube/.local/bin/bench start
+2023-11-22 15:45:59,303 INFO /home/acube/.local/bin/bench schedule
+2023-11-22 15:45:59,321 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-22 15:45:59,366 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-22 15:45:59,378 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-22 15:45:59,432 INFO /home/acube/.local/bin/bench watch
+2023-11-22 15:45:59,435 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-22 15:52:23,479 INFO /home/acube/.local/bin/bench start
+2023-11-22 15:52:25,313 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-22 15:52:25,551 INFO /home/acube/.local/bin/bench schedule
+2023-11-22 15:52:25,557 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-22 15:52:25,561 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-22 15:52:25,619 INFO /home/acube/.local/bin/bench watch
+2023-11-22 15:52:25,817 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-22 17:52:25,720 INFO /home/acube/.local/bin/bench start
+2023-11-22 17:52:27,646 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-22 17:52:27,678 INFO /home/acube/.local/bin/bench watch
+2023-11-22 17:52:27,729 INFO /home/acube/.local/bin/bench schedule
+2023-11-22 17:52:27,793 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-22 17:52:27,800 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-22 17:52:27,908 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-30 15:41:17,491 INFO /home/acube/.local/bin/bench start
+2023-11-30 15:41:19,578 INFO /home/acube/.local/bin/bench schedule
+2023-11-30 15:41:19,625 INFO /home/acube/.local/bin/bench watch
+2023-11-30 15:41:19,641 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-30 15:41:19,683 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-30 15:41:19,691 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-30 15:41:19,759 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-30 15:41:58,800 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-11-30 15:57:03,429 INFO /home/acube/.local/bin/bench start
+2023-11-30 15:57:05,274 INFO /home/acube/.local/bin/bench watch
+2023-11-30 15:57:05,288 INFO /home/acube/.local/bin/bench schedule
+2023-11-30 15:57:05,328 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-30 15:57:05,344 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-30 15:57:05,361 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-30 15:57:05,367 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-30 16:09:39,414 INFO /home/acube/.local/bin/bench start
+2023-11-30 16:09:41,338 INFO /home/acube/.local/bin/bench watch
+2023-11-30 16:09:41,370 INFO /home/acube/.local/bin/bench schedule
+2023-11-30 16:09:41,395 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-30 16:09:41,452 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-30 16:09:41,461 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-30 16:09:41,544 INFO /home/acube/.local/bin/bench worker --queue long
+2023-11-30 16:11:41,091 INFO /home/acube/.local/bin/bench start
+2023-11-30 16:11:42,910 INFO /home/acube/.local/bin/bench watch
+2023-11-30 16:11:42,929 INFO /home/acube/.local/bin/bench worker --queue short
+2023-11-30 16:11:42,942 INFO /home/acube/.local/bin/bench schedule
+2023-11-30 16:11:42,952 INFO /home/acube/.local/bin/bench worker --queue default
+2023-11-30 16:11:42,963 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-11-30 16:11:42,998 INFO /home/acube/.local/bin/bench worker --queue long
+2023-12-01 10:44:42,167 INFO /home/acube/.local/bin/bench --site redline.int.com
+2023-12-01 10:44:43,661 WARNING /home/acube/.local/bin/bench --site redline.int.com executed with exit code 2
+2023-12-01 10:44:57,468 INFO /home/acube/.local/bin/bench start
+2023-12-01 10:44:59,612 INFO /home/acube/.local/bin/bench schedule
+2023-12-01 10:44:59,613 INFO /home/acube/.local/bin/bench worker --queue short
+2023-12-01 10:44:59,666 INFO /home/acube/.local/bin/bench worker --queue long
+2023-12-01 10:44:59,674 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-12-01 10:44:59,686 INFO /home/acube/.local/bin/bench worker --queue default
+2023-12-01 10:44:59,687 INFO /home/acube/.local/bin/bench watch
+2023-12-01 10:45:04,238 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-01 10:48:24,426 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-06 17:00:05,554 INFO /home/acube/.local/bin/bench --site redlines.int.com migrate
+2023-12-06 17:00:36,171 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-06 17:00:42,724 INFO /home/acube/.local/bin/bench start
+2023-12-06 17:00:45,668 INFO /home/acube/.local/bin/bench watch
+2023-12-06 17:00:45,692 INFO /home/acube/.local/bin/bench worker --queue long
+2023-12-06 17:00:45,702 INFO /home/acube/.local/bin/bench worker --queue short
+2023-12-06 17:00:45,715 INFO /home/acube/.local/bin/bench worker --queue default
+2023-12-06 17:00:45,729 INFO /home/acube/.local/bin/bench schedule
+2023-12-06 17:00:45,773 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-12-06 17:01:04,133 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-06 17:03:07,671 INFO /home/acube/.local/bin/bench start
+2023-12-06 17:03:10,049 INFO /home/acube/.local/bin/bench worker --queue default
+2023-12-06 17:03:10,050 INFO /home/acube/.local/bin/bench worker --queue long
+2023-12-06 17:03:10,054 INFO /home/acube/.local/bin/bench schedule
+2023-12-06 17:03:10,148 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-12-06 17:03:10,207 INFO /home/acube/.local/bin/bench watch
+2023-12-06 17:03:10,221 INFO /home/acube/.local/bin/bench worker --queue short
+2023-12-06 17:21:05,144 INFO /home/acube/.local/bin/bench start
+2023-12-06 17:21:07,878 INFO /home/acube/.local/bin/bench schedule
+2023-12-06 17:21:07,965 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-12-06 17:21:07,976 INFO /home/acube/.local/bin/bench worker --queue long
+2023-12-06 17:21:08,044 INFO /home/acube/.local/bin/bench worker --queue default
+2023-12-06 17:21:08,088 INFO /home/acube/.local/bin/bench watch
+2023-12-06 17:21:08,341 INFO /home/acube/.local/bin/bench worker --queue short
+2023-12-06 18:00:01,787 INFO /home/acube/.local/bin/bench --verbose --site all backup
+2023-12-06 18:51:54,127 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-06 18:52:17,685 INFO /home/acube/.local/bin/bench start
+2023-12-06 18:52:19,988 INFO /home/acube/.local/bin/bench schedule
+2023-12-06 18:52:20,017 INFO /home/acube/.local/bin/bench watch
+2023-12-06 18:52:20,024 INFO /home/acube/.local/bin/bench worker --queue short
+2023-12-06 18:52:20,027 INFO /home/acube/.local/bin/bench worker --queue long
+2023-12-06 18:52:20,051 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-12-06 18:52:20,158 INFO /home/acube/.local/bin/bench worker --queue default
+2023-12-06 18:52:21,413 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-06 19:16:40,326 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-09 13:43:17,705 INFO /home/acube/.local/bin/bench start
+2023-12-09 13:43:19,671 INFO /home/acube/.local/bin/bench worker --queue long
+2023-12-09 13:43:19,680 INFO /home/acube/.local/bin/bench worker --queue short
+2023-12-09 13:43:19,770 INFO /home/acube/.local/bin/bench schedule
+2023-12-09 13:43:19,776 INFO /home/acube/.local/bin/bench watch
+2023-12-09 13:43:19,780 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-12-09 13:43:19,841 INFO /home/acube/.local/bin/bench worker --queue default
+2023-12-09 13:44:05,489 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-12 10:58:23,375 INFO /home/acube/.local/bin/bench start
+2023-12-12 10:58:25,574 INFO /home/acube/.local/bin/bench schedule
+2023-12-12 10:58:25,593 INFO /home/acube/.local/bin/bench worker --queue default
+2023-12-12 10:58:25,621 INFO /home/acube/.local/bin/bench watch
+2023-12-12 10:58:25,687 INFO /home/acube/.local/bin/bench worker --queue short
+2023-12-12 10:58:25,785 INFO /home/acube/.local/bin/bench worker --queue long
+2023-12-12 10:58:25,981 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-12-12 10:58:29,962 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-21 16:29:26,604 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-21 16:29:35,228 INFO /home/acube/.local/bin/bench start
+2023-12-21 16:29:36,722 INFO /home/acube/.local/bin/bench schedule
+2023-12-21 16:29:36,729 INFO /home/acube/.local/bin/bench watch
+2023-12-21 16:29:36,736 INFO /home/acube/.local/bin/bench worker --queue default
+2023-12-21 16:29:36,737 INFO /home/acube/.local/bin/bench worker --queue long
+2023-12-21 16:29:36,750 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-12-21 16:29:36,764 INFO /home/acube/.local/bin/bench worker --queue short
+2023-12-21 16:29:38,842 INFO /home/acube/.local/bin/bench --site redline.int.com migrate
+2023-12-21 16:54:11,411 INFO /home/acube/.local/bin/bench start
+2023-12-21 16:54:13,513 INFO /home/acube/.local/bin/bench worker --queue short
+2023-12-21 16:54:13,516 INFO /home/acube/.local/bin/bench watch
+2023-12-21 16:54:13,544 INFO /home/acube/.local/bin/bench worker --queue default
+2023-12-21 16:54:13,571 INFO /home/acube/.local/bin/bench schedule
+2023-12-21 16:54:13,576 INFO /home/acube/.local/bin/bench serve --port 8027
+2023-12-21 16:54:13,581 INFO /home/acube/.local/bin/bench worker --queue long
